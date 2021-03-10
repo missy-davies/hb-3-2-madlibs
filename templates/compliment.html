@@ -5,12 +5,7 @@
   <title>A Compliment</title>
 </head>
 <body>
-  <h2>Hi {{ person }}! I think you're:
-    </ul>{% for i in range(3)%}
-      <li> {{ compliment }}!</li>
-      {% endfor %}
-    </ul>
-    </h2>
+  <h2>Hi {{ person }}! I think you're {{ compliment }}!</h2>
   <h3>Would you like to play a game?</h3>
   <form action="/game">
     <input type = "radio" name ="yes_or_no" value = "yes"><label>Yes</label>
