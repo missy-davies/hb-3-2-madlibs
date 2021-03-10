@@ -23,10 +23,12 @@ def start_here():
     <!doctype html>
     <html>
       <head>
+        <link rel = "stylesheet" href ="/static/madlibs.css">
         <title>Start Here</title>
       </head>
       <body>
-        <a href="/hello">Take me to the start</a>
+        <h1>Click <a href="/hello">HERE</a> to get started!</h1>
+       
       </body>
     </html>
 
@@ -65,13 +67,15 @@ def show_madlib_form():
 @app.route('/madlib')
 def show_madlib():
     noun = request.args.get("noun")
-    name = request.args.get("name")
+    person = request.args.get("person")
     verb = request.args.get("verb")
     adjective = request.args.get("adjective")
-
-
+    noun_1 = request.args.get("noun_1")
+    color = request.args.get("color")
+    
     return render_template("madlib.html", noun = noun, verb = verb, 
-                            adjective = adjective, name = name)
+                            adjective = adjective, person = person , 
+                            noun_1 = noun_1, color = color)
 
 
 if __name__ == '__main__':

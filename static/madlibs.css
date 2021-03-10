@@ -1,0 +1,14 @@
+html {
+    background-color: rgb(157, 231, 157);
+}
+
+h1 {
+    color: rgb(47, 24, 164);
+    font-family: monospace;
+}
+
+body {
+    font-family: monospace;
+    font-size: 16px;
+    color: rgb(47, 24, 164);
+}
